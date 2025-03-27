@@ -17,16 +17,25 @@ export default function JavaScriptComponentes() {
     }
 
   return (
-    <View>
-      <Text>Nome: {nome}</Text>
-      <Text>Idade: {idade}</Text>
-      <Text>Nome Por meio da Função: {exibirNome()}</Text>
-      <Text>Resultado de uma conta: {2*5}</Text>
-      <Text>Soma da idade: {idade + 20}</Text>
-      <Text>Check maior idade: {checarMaiorIdade()}</Text>
-      <Text>Check maior idade: {idade >= 18 ? "Maior idade" : "Menor idade"}</Text>
+    <View style={styles.componenteJs}>
+      <Text style={styles.texto}>Nome: {nome}</Text>
+      <Text style={styles.texto}>Idade: {idade}</Text>
+      <Text style={styles.texto}>Nome Por meio da Função: {exibirNome()}</Text>
+      <Text style={styles.texto}>Resultado de uma conta: {2*5}</Text>
+      <Text style={styles.texto}>Soma da idade: {idade + 20}</Text>
+      <Text style={styles.texto}>Check maior idade: {checarMaiorIdade()}</Text>
+      <Text style={styles.texto}>Check maior idade: {idade >= 18 ? "Maior idade" : "Menor idade"}</Text>
     </View>
   )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  componenteJs:{
+    backgroundColor: '#548724',
+    padding: 20,
+    borderRadius: 10
+  },
+  texto:{
+    color: '#f8f5f2'
+  }
+})
