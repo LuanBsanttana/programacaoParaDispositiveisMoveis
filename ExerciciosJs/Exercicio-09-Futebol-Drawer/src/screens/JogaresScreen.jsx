@@ -42,7 +42,7 @@ export default function JogaresScreen() {
               <Card style={{margin: 5 }}>
               <Card.Title
               title={item.nome}
-              subtitle={"N°: " + item.numero}
+              subtitle={"N°: " + item.numero }
               left={(props) => <Avatar.Image {...props} source={{ uri: item.imagem }} />}
             />
               </Card>
